@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 420px;
+    }
+
+    .card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-right: 20px;
+      background: #ccc;
+    }
+
+    .card-content {
+      flex: 1;
+    }
+
+    .card-content h3 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .card-content p {
+      margin: 8px 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .button-group {
+      margin-top: 10px;
+    }
+
+    .button-group button {
+      background: #0b5ed7;
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      margin-right: 8px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .button-group button:hover {
+      background: #084298;
+    }
+
+    @media(640px)
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlQMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAwQFAgEHBv/EADIQAAICAAUCBAUDAwUAAAAAAAABAgMEERIhMUFRBRNxgSIyYaGxUpHCQlPBBiM0YpL/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/APuIAAAAAAR23QpWc5Zf5AkBnW+ISe1Ucl3fJVndZN/FOT9wNlzguZJe555tf9yP7mJ6gDdUk+GmemCm1w2vQmrxV1fE212e4GwClTj4SyVq0Pv0LkWpLNPNAegAAAAAAAAAAAUsditKddb+Lq+wDFYzy84Vby6vojPlJzk5SebfVngKgAWKsPtnZ7ICuMi+oqK2WR6BnguTphLfTk/oVrK3W9+OjA4JKb7KH8D26xIwBs4e+F0c4vfquqJTDrslVNTg919zXw90boKUfddiKlAAAAAAABDirvJqcuvC9THbzbb5fJZx9vmXuPSG3uVgAB4VFjC1552P0RZOYLKCS7HRFAAAOZxUotM6AFCUXGTT5PCbFLKaa6kJUCXC3eTcn/S9pEQA3U80elTw63XTpb3ht7FsigAAHNktEJS7I6K+OeWGn7IDJbcnm+XuACoAAC+uEekWHmpVpdVsSkUAAAAAVsV80fQgO7parG+nBwVAAAWfD56cQo9JLI1TEolpug/+yNtEUAAAq+I/8Z+qLRXx6zw0/Z/cDJABUAAB1XPRPUvdFuucZrNc9ikE2uGBoAqRvsXTUdO+z+3l+5FWCC+7mMPdkU7Zy+Z7djgAACoAAD2PzL1RumJStV0F3kjbIoAABxbHXXKHdZHYAwcmtnygWMdX5d8n0luiuVABbvLr2LVNGjee8vwFRV0SlvLZE8aYR6ZvuyQEAAAeNJrdJkUsPF/L8JMAKM65Q+ZejOS+0msms0VbqdHxRz0/goiAARYwENWIT6RWZrFTw6vTVrfM/wAFsigAAAACDF0+dU0vmW8TI65dTeKeIwqditjz1Xf6gV6KtK1yW74+hMAAAAAAAAAADy68AAU76/Lln/T+D3DVO61RXHLf0LWjzE49yzhqI0QyW7fL7gSxSSSXC2PQAAAAAAAAAILaesP2IGmuS8cSrjLlAVASyokvl3Immnk0wAAAAHUYSlxEDk9jBy2RNCj9T9iaKSWSA5rrUF9TsAAAAAAAAAAAAAGYAHmR6AOdEf0o88uH6V+x2APFGK4SR6MxmAAzGYAHmaPQAAAAAAAABzLZZgAU/D8RZicKrLMtTnNbLLibivsjnwrGWYujXYop6K5fCv1QTf3YAE2IvlXdhoRSyss0yz7aZP8AijzHXzoVDhl8d8IPNdG9wALCbyEZNsADJxviN9PjdOEho8qVebTW+eU3/Ffcx4f6gx8sJgbm688ThozktG0W3Fbf+nyABJT49jbZTi3XFf7SWUeNSi3z6snx/jWLoxeIpr8tRqxFdazju04ann7gAML45i7cZgKpRq04jH4rDzyi/lrjNxy35+FZn6VcIAD0AAAAB//Z" alt="Profile">
+    <h3>Vedika Kataria</h3>
+    <div class="card-content">
+        <p>Web Designer & JavaScript Enthusiast. Loves coffee!</p>
+      <div class="button-group">
+        <button>Contact</button>
+        <button>Portfolio</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
