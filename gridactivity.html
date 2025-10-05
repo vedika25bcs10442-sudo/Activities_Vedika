@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        background-color: pink;
+    }
+
+    .container{
+        background-color: blue;
+        height: 1000px;
+        width: 1200px;
+        display:grid;
+        padding: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .box{
+        background-color: yellow;
+        margin:10px;
+    }
+
+    #box1{
+        grid-column: 1/4;
+    }
+    #box2{
+        grid-row:2/4;
+    }
+    #box3{
+        grid-row:2/3;
+        grid-column:2/3;
+    }
+    #box5{
+        grid-column:2/3;
+        grid-row:3/4;
+    }
+    #box4{
+        grid-row:2/4;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box" id ="box1">box1</div>
+        <div class="box" id ="box2">box2</div>
+        <div class="box" id ="box3">box3</div>
+        <div class="box" id ="box4">box4</div>
+        <div class="box" id ="box5">box5</div>
+    </div>
+</body>
+</html>
